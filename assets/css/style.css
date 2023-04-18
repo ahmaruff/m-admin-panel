@@ -1,0 +1,64 @@
+@import url('/assets/mdash/custom-props.css');
+
+aside#sidenav {
+    height: 100%;
+    width: 0; /* change with JS*/
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--m-color-darker);
+    overflow-x: hidden;
+    transition: 1s ease;
+}
+
+main#main, #close-sidenav-menu, #open-sidenav-menu {
+    transition: 1s ease;
+}
+
+main#main {
+    height: 100%;
+}
+
+#close-sidenav-menu {
+    display: none;
+}
+
+header {
+    width: 100%;
+    background-color: var(--m-color-darker);
+    position: sticky;
+    top: 0;
+}
+
+*[nav], *[nav]:visited {
+    color: var(--m-color-offwhite);
+    text-decoration: none;
+}
+
+*[nav]:hover {
+    color: var(--m-color-gray-5);
+    text-decoration: none;
+}
+
+nav > m-menu > span[slot="trigger"] {
+    color: var(--m-color-offwhite);
+    text-decoration: none;
+}
+
+nav > m-menu > span[slot="trigger"]:hover {
+    color: var(--m-color-gray-5);
+    text-decoration: none;
+}
+
+nav > m-menu > div[slot="items"] {
+    background-color: var(--m-color-dark);
+}
+
+nav > m-menu > div[slot="items"] {
+    background-color: var(--m-color-dark);
+}
+
+nav > m-menu > div[slot="items"] > a {
+    color: var(--m-color-offwhite);
+}
